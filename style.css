@@ -1,0 +1,209 @@
+/* Strong Cyan: hsl(171, 66%, 44%)
+Light Blue: hsl(233, 100%, 69%)
+
+Dark Grayish Blue: hsl(210, 10%, 33%)
+Grayish Blue: hsl(201, 11%, 66%) */
+
+body,
+html,
+p {
+  margin: 0;
+  font-size: 18px;
+  font-family: "Bai Jamjuree400" !important;
+  color: hsl(201, 11%, 66%);
+}
+
+@font-face {
+  font-family: "Bai Jamjuree400";
+  src: url(Bai_Jamjuree/BaiJamjuree-Regular.ttf);
+}
+@font-face {
+  font-family: "Bai Jamjuree600";
+  src: url(Bai_Jamjuree/BaiJamjuree-SemiBold.ttf);
+}
+.Header-bg {
+  background-image: url(images/bg-header-desktop.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+.Txt-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10%;
+}
+.Txt-header p {
+  width: 38%;
+  text-align: center;
+}
+h1,
+h2,
+h5 {
+  font-family: "Bai Jamjuree600" !important;
+  color: hsl(210, 10%, 33%);
+}
+
+.btn-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 15px;
+}
+.btn-header button {
+  padding: 10px 30px 10px 30px;
+  border-radius: 20px;
+  margin-top: 30px;
+  border: none;
+}
+
+.btn-primary {
+  background-color: hsl(171, 66%, 44%);
+}
+.btn-secondary {
+  background-color: hsl(233, 100%, 69%);
+}
+/* ------------------------------------------main */
+
+.Txt-snippet {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 5%;
+}
+.Txt-snippet p {
+  width: 50%;
+  margin-top: 0;
+}
+.Main-text-img {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5%;
+}
+
+.Main-txt {
+  margin-left: 10%;
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  align-items: center;
+  padding-top: 20px;
+}
+.gap-item {
+  margin: 70px 0 40px 0;
+}
+/* ---------------------cards-------------------- */
+.Cards-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 60px;
+  padding: 50px;
+  justify-content: center;
+}
+.cards-display {
+  text-align: center;
+  width: 20%;
+  margin-left: 20px;
+}
+/* ----------------------brands ----------------------- */
+
+.Brands-container {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 100px 0 100px 0;
+}
+/* ----------------------footer---------- */
+
+.Footer-bg {
+  background-color: hsl(200, 9%, 87%);
+  margin-top: 100px;
+  height: 250px;
+}
+
+.footer-item-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px 40px 0 40px;
+}
+
+/* -----------------------media query */
+
+@media screen and (max-width: 475px) {
+  .Header-bg {
+    background-image: url(images/bg-header-mobile.png);
+  }
+
+  .Txt-header {
+    text-align: center;
+  }
+  .btn-header {
+    flex-direction: column;
+    padding: 0 20px 0 20px;
+  }
+  .Txt-header p {
+    width: 100%;
+  }
+  .p-style-moblile {
+    width: 100%;
+  }
+
+  .Main-text-img {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .Main-text-img img {
+    width: 80%;
+    max-width: 400px;
+    height: auto;
+  }
+  .gap-item img {
+    width: 80%;
+    max-width: 400px;
+    height: auto;
+  }
+
+  .Main-txt {
+    width: 70%;
+  }
+  .Main-txt h5 {
+    font-size: 25px;
+  }
+  .Cards-container {
+    flex-direction: column;
+  }
+  .cards-display {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .Brands-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+  .footer-item-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+  .footer-item-container p {
+    color: hsl(210, 10%, 33%);
+    font-weight: 600;
+  }
+  .Footer-bg {
+    height: auto;
+  }
+  .footer-item-container img {
+    padding-left: 20px;
+  }
+}
